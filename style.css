@@ -1,0 +1,56 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+input, button, select {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e0e0e;
+}
+
+#gallery {
+    margin-top: 20px;
+}
+
+#gallery img {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid #ddd;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Scale up the image slightly on hover */
+}
+
+#myStudentId {
+    font-size: 18px;
+    margin-top: 10px;
+}
