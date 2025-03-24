@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Order Your Pizza</h1>
+    <p id="student-details"></p> <!-- Student details displayed here -->
+</header>
+
+<form id="pizza-form">
+    <label for="size">Choose Pizza Size:</label>
+    <select id="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <label for="crust">Choose Crust Type:</label>
+    <select id="crust">
+        <option value="thin">Thin</option>
+        <option value="thick">Thick</option>
+        <option value="stuffed">Stuffed</option>
+    </select>
+
+    <label for="toppings">Choose Toppings:</label>
+    <select id="toppings" multiple>
+        <option value="cheese">Cheese</option>
+        <option value="pepperoni">Pepperoni</option>
+        <option value="mushrooms">Mushrooms</option>
+        <option value="onions">Onions</option>
+        <option value="sausage">Sausage</option>
+        <option value="bacon">Bacon</option>
+    </select>
+
+    <button type="button" id="order-button">Order Pizza</button>
+</form>
+
+<div id="pizza-description"></div>
+
+</body>
+</html>
