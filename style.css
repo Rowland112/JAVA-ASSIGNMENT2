@@ -1,56 +1,144 @@
-/* Basic styling for the page */
+/* General body styling with dark mode */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* Dark background for a modern feel */
     margin: 0;
-    padding: 0;
-    transition: background-color 0.5s ease; /* Smooth transition for background color */
+    padding: 20px;
+    color: #ddd; /* Light text for contrast */
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 h1 {
+    font-size: 3.8em;
+    color: #ffbc00; /* A bright yellow-orange for the heading */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* Student details styling */
+#student-details {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #bbb; /* Lighter color for the student info */
+    margin-bottom: 20px;
+}
+
+/* Form container styling */
+form {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #2c2c2c; /* Dark grey background for the form */
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures padding and borders are included */
+}
+
+form:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Label and input styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #ffbc00; /* Gold-yellow for labels to match the header */
+    font-weight: 600;
+}
+
+select, button, input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    font-size: 1.1em;
     background-color: #333;
-    color: white;
-    padding: 20px;
-    margin: 0;
+    color: #ddd;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and borders are included */
 }
 
-.controls {
-    margin: 20px 0;
-}
-
-input, button, select {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-}
-
+/* Button styling */
 button {
-    background-color: #ff6600;
-    color: white;
+    background-color: #ffbc00; /* Bright gold color for the button */
+    color: #1a1a1a; /* Dark text color for contrast */
+    font-size: 1.2em;
     border: none;
     cursor: pointer;
+    padding: 15px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 button:hover {
-    background-color: #0e0e0e;
+    background-color: #e8a500; /* Slightly darker gold on hover */
+    box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-#gallery {
-    margin-top: 20px;
+button:focus {
+    outline: none;
+    border: 2px solid #ffbc00; /* Focus effect */
 }
 
-#gallery img {
-    max-width: 80%;
-    height: auto;
-    border: 5px solid #ddd;
-    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+/* Toppings selection */
+#toppings {
+    height: 150px;
+    resize: vertical;
+    background-color: #444;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    color: #ddd;
 }
 
-#gallery img:hover {
-    transform: scale(1.05); /* Scale up the image slightly on hover */
+/* Pizza description area styling */
+#pizza-description {
+    margin-top: 40px;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #ffbc00;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
 }
 
-#myStudentId {
-    font-size: 18px;
-    margin-top: 10px;
+/* Inputs & button focus effect */
+select:focus, button:focus, input:focus {
+    background-color: #555;
+    border-color: #ffbc00;
+    box-shadow: 1px 1px 8px rgba(255, 188, 0, 0.6);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    #toppings {
+        height: 120px;
+    }
 }

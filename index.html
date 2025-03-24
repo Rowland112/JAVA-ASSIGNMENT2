@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 2 | COMP1073 Client-Side JavaScript</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking CSS file -->
-    <script src="scripts.js" defer></script> <!-- Linking JS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
-
 <body>
-<h1>Image Gallery</h1>
+<header>
+    <h1>Order Your Pizza</h1>
+    <p id="student-details"></p> <!-- Student details displayed here -->
+</header>
 
-<div class="controls">
-    <p id="myStudentId"></p>
-
-    <label for="customNumber">Enter number from 1 to 100:</label>
-    <input id="customNumber" type="number" placeholder="Enter a number" />
-
-    <button class="custColor" id="changeColorBtn">Change Custom Color</button>
-    <button class="randColor" id="randomColorBtn">Change Random Color</button>
-</div>
-
-<div class="image-selection">
-    <label for="imageSelect">Select Image</label>
-    <select id="imageSelect">
-        <option value="">Please choose…</option>
+<form id="pizza-form">
+    <label for="size">Choose Pizza Size:</label>
+    <select id="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
     </select>
-</div>
 
-<div id="gallery">
-    <img id="images" src="img/img4.jpg" alt="Selected Image" />
+    <label for="crust">Choose Crust Type:</label>
+    <select id="crust">
+        <option value="thin">Thin</option>
+        <option value="thick">Thick</option>
+        <option value="stuffed">Stuffed</option>
+    </select>
 
-</div>
+    <label for="toppings">Choose Toppings:</label>
+    <select id="toppings" multiple>
+        <option value="cheese">Cheese</option>
+        <option value="pepperoni">Pepperoni</option>
+        <option value="mushrooms">Mushrooms</option>
+        <option value="onions">Onions</option>
+        <option value="sausage">Sausage</option>
+        <option value="bacon">Bacon</option>
+    </select>
+
+    <button type="button" id="order-button">Order Pizza</button>
+</form>
+
+<div id="pizza-description"></div>
+
 </body>
-
 </html>
